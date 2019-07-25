@@ -1,0 +1,89 @@
+<div class="container">
+  <div class="content" ibmGrid>
+    <div style="margin-left: 50px !important;" ibmRow>
+      <div ibmCol>
+        <p style="font-size:20px;">Today's update</p>
+        <div ibmRow>
+          <div class="graph" ibmCol [columnNumbers]="{'lg':4}">
+            <img src="../../../assets/images/graph.png" width="500" height="150">
+          </div>
+          <div class="info" ibmCol [columnNumbers]="{'lg':3}">You’ve had a <strong>26%</strong> increase in exercise
+            from accuracy over the last 7
+            days, great job</div>
+        </div>
+      </div>
+      <div ibmCol style="margin: auto;">
+        <div style="font-size: 20px; margin-bottom: 15px;">
+          Your next appointment:
+        </div>
+        <div style="font-size: 28px; margin-bottom: 10px;">
+          1 days away
+        </div>
+        <div style="font-size: 16px; margin-bottom: 15px;">
+          July 13, 2019
+        </div>
+        <div style="font-size:14px">
+          <a href="#" ibmLink style="color: #6EA6FF">Manage bookings</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div ibmGrid style="margin-top: 15px;" class="selector" (click)="navigate()">
+    <div ibmRow style="font-size: 20px; margin-left: 50px !important;">
+      Today's excercise plan&nbsp;-&nbsp;<span>45 min</span>
+    </div>
+    <div ibmRow styles="margin-top: 15px; margin-left: 50px !important; cursor: pointer !important;" class="tile">
+      <div ibmCol [columnNumbers]="{'lg':3}" style="padding: 0px !important;">
+        <img src="../../../assets/images/warrior_pose.png" width="320" height="170">
+      </div>
+      <div ibmCol [columnNumbers]="{'lg': 8}">
+        <p style="font-size: 16px; margin-top: 15px;">Warrior pose</p>
+        <p style="margin-top: 15px;">Lorem Ipsum is simply a dummy text of the printing and typesetting industry. Lorem
+          Ipsum has been industry’s standard dummy text ever since the 1500s, when an unknown…</p>
+        <p style="float: right; margin-top: 40px;">3 sets of 5 repitition - 2 minutes</p>
+      </div>
+    </div>
+  </div>
+
+  <div ibmGrid style="margin-top: 15px;" class="selector" (click)="navigate()">
+    <div ibmRow styles="margin-left: 50px !important;" class="tile">
+      <div ibmCol [columnNumbers]="{'lg':3}" style="padding: 0px !important;">
+        <img src="../../../assets/images/knee_stretch.png" width="320" height="170">
+      </div>
+      <div ibmCol [columnNumbers]="{'lg': 8}">
+        <p style="font-size: 16px; margin-top: 15px;">Knee Stretch</p>
+        <p style="margin-top: 15px;">Lorem Ipsum is simply a dummy text of the printing and typesetting industry. Lorem
+          Ipsum has been industry’s standard dummy text ever since the 1500s, when an unknown…</p>
+        <p style="float: right; margin-top: 40px;">3 sets of 5 repitition - 2 minutes</p>
+      </div>
+    </div>
+  </div>
+  <div style="margin-top: 0px; text-align:center;">
+    <a href="#" ibmLink style="color: #6EA6FF">View all excercises</a></div>
+
+
+  <div ibmRow style="font-size: 20px; margin-left: 50px !important;">
+    Today's excercise plan&nbsp;-&nbsp;<span>45 min</span>
+  </div>
+  <div ibmGrid>
+    <div ibmRow>
+      <div ibmCol class="tile" [columnNumbers]="{'lg':3}" style="padding: 25px;">
+        <p style="font-size: 20px">July 21, 2019</p>
+        <p style="font-size: 12px; margin-top: 10px;">Completed 2 weeks ago</p>
+        <ul style="margin-top: 10px; font-size: 14px; list-style-type: initial;">
+          <li style="margin-bottom: 5px;">Addition of downward dog, bodyweight squats</li>
+          <li>Removal of knee stretch</li>
+        </ul>
+      </div>
+
+      <div ibmCol class="tile" [columnNumbers]="{'lg':3}" style="padding: 25px;">
+          <p style="font-size: 20px">July 10, 2019</p>
+          <p style="font-size: 12px; margin-top: 10px;">Completed 4 weeks ago</p>
+          <ul style="margin-top: 10px; font-size: 14px; list-style-type: initial;">
+            <li>Removal of knee stretch</li>
+          </ul>
+        </div>
+    </div>
+  </div>
+</div>

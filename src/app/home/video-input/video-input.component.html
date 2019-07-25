@@ -1,0 +1,59 @@
+<video #video autoplay></video>
+<!-- <canvas #canvas></canvas> -->
+<div class="exercise-footer" ibmGrid>
+    <div ibmRow>
+        <p>{{reps}} of {{exercise.reps}} reps</p>
+        <p>{{sets}} of {{exercise.sets}} sets</p>
+        <div id="button-container">
+            <button ibmButton="ibmButton" (click)="completeRep()" [disabled]="isDone">Complete
+                Rep</button>
+            <button ibmButton="ibmButton" (click)="showModal()">Skip exercise</button>
+            <button ibmButton="ibmButton" [disabled]="!endExercise" (click)="showModal2()">Complete exercise</button>
+        </div>
+    </div>
+</div>
+<ibm-modal *ngIf="openModal" (overlaySelected)="closeModal()">
+    <ibm-modal-header (closeSelect)="closeModal()">Skip exercise</ibm-modal-header>
+    <section class="bx--modal-content">
+        <fieldset class="bx--fieldset">
+            <legend class="bx--label">Select an applicable options</legend>
+            <ibm-radio-group aria-label="radiogroup" orientation="vertical"
+                [(ngModel)]="radio">
+                <ibm-radio *ngFor="let r of radio">
+                    {{r}}
+                </ibm-radio>
+            </ibm-radio-group>
+        </fieldset>
+    </section>
+    <ibm-modal-footer>
+        <button class="bx--btn bx--btn--secondary" (click)="closeModal()">
+            Cancel
+        </button>
+       <button class="bx--btn bx--btn--primary" modal-primary-focus (click)="submit1()">
+            Submit
+       </button>
+    </ibm-modal-footer>
+</ibm-modal>
+
+<ibm-modal *ngIf="openModal2" (overlaySelected)="closeModal2()">
+        <ibm-modal-header (closeSelect)="closeModal2()">Exercise feedback</ibm-modal-header>
+        <section class="bx--modal-content">
+            <fieldset class="bx--fieldset">
+                <legend class="bx--label">Select an applicable option.</legend>
+                <ibm-radio-group aria-label="radiogroup" orientation="vertical"
+                    [(ngModel)]="radio">
+                    <ibm-radio *ngFor="let o of options">
+                        {{o}}
+                    </ibm-radio>
+                </ibm-radio-group>
+            </fieldset>
+        </section>
+        <ibm-modal-footer>
+            <button class="bx--btn bx--btn--secondary" (click)="closeModal2()">
+                Cancel
+            </button>
+            <button class="bx--btn bx--btn--primary" modal-primary-focus (click)="submit1()">
+                Save
+            </button>
+    </ibm-modal-footer>
+</ibm-modal>

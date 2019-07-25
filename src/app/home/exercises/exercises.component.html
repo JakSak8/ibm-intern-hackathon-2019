@@ -1,0 +1,19 @@
+<body>
+    <div class="display" [innerHtml]="iframe_html">
+    </div>
+    <div class="exercises">
+        <div class="exerciseTitle">
+            <h2 class="exerciseName">{{exercise.name}}</h2>
+            <h3 class="setsReps"><strong>{{exercise.sets}} sets</strong> of <strong>{{exercise.reps}}
+                    repititions</strong>
+            </h3>
+        </div>
+        <div class="muscleGroup">
+            <p>{{exercise.muscleGroup}}</p>
+        </div>
+        <div class="exerciseDescription">
+            <p>{{exercise.description}}</p>
+        </div>
+    </div>
+    <a [routerLink]="['/exercises', exercise.id]"><button ibmButton="ibmButton" size="normal">Begin Exercise</button></a>
+</body>

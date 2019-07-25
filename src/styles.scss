@@ -1,0 +1,16 @@
+$feature-flags: (
+	ui-shell: true,
+	css--reset: false
+);
+
+@import "~carbon-components/scss/globals/scss/styles";
+
+body {
+	@import "~carbon-components/scss/globals/scss/css--reset";
+	@import "~carbon-components/scss/globals/scss/typography";
+	@include reset;
+	@include type-style('body-short-01');
+	line-height: 1;
+	background: #171717 100%;
+}
+

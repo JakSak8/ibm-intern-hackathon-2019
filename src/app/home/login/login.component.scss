@@ -1,0 +1,34 @@
+.container {
+  background-color: #171717;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.form {
+
+  .form-holder{
+      padding: 20px;
+      background-color: #ffffff;
+  }
+  
+}
+
+.picture{
+    height: 693px !important;
+    background-image: url("assets/images/login_image.png");
+    background-repeat: no-repeat;
+}
+
+
+.title-text{
+    font-size: 20px;
+    line-height: 2rem;
+    margin-top: 150px;
+    margin-left: 32px;
+    margin-right: 95px;
+}
+
+svg{
+    height: 100px;
+    width: 100px;
+}

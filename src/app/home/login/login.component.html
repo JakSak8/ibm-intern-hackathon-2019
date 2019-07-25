@@ -1,0 +1,57 @@
+<div class="container" ibmGrid>
+	<div class="content" ibmRow>
+		<div class="picture" ibmCol [columnNumbers]="{'lg':5, 'md':3}">
+			<p class="title-text">Physiotheraphy exercise at your own convenience with the help of IBM Watson for
+				Outpatients
+				Care</p>
+		</div>
+		<div class="form" ibmCol [columnNumbers]="{'lg':7, 'md':6}">
+
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 396 157" style="margin-top: 150px;">
+				<defs>
+					<style>
+						.cls-1 {
+							fill: #fff;
+						}
+					</style>
+				</defs>
+				<title>Asset 1</title>
+				<g id="Layer_2" data-name="Layer 2">
+					<g id="Artwork">
+						<path id="IBM" class="cls-1"
+							d="M0,147H77v10H0Zm0-11H77V126H0Zm22-21H55V105H22Zm0-21H55V84H22Zm0-21H55V63H22ZM55,42H22V52H55ZM0,31H77V21H0ZM0,10H77V0H0ZM88,147v10h81a41.85,41.85,0,0,0,27.19-10Zm0-21v10H205.37a41.57,41.57,0,0,0,4.16-10Zm22-21v10h33V105Zm0-42h0V73h87.29a42.4,42.4,0,0,0,8.07-10Zm99.53-32a41.57,41.57,0,0,0-4.16-10H88V31H209.53ZM110,42V52h33V42Zm64,10h35.78A42.26,42.26,0,0,0,211,42H174Zm0,53v10h37a42.26,42.26,0,0,0-1.22-10Zm23.29-21H110V94h95.36A42.4,42.4,0,0,0,197.29,84Zm-1.1-74A41.85,41.85,0,0,0,169,0H88V10H196.19ZM220,157h55V147H220Zm0-21h55V126H220Zm22-21h33V105H242Zm0-21h33V84H242Zm99,63h55V147H341Zm0-21h55V126H341Zm0-21h33V105H341Zm33-31H341V94h33ZM341,73h33V63H312.14l-3.47,10h29L341,63.48Zm33-31H319.43L316,52h58ZM334,0l-3.47,10H396V0ZM308,157l3.51-9.95h-7ZM300.6,136h14.79l3.54-10H297.07Zm-7.41-21h29.62l3.53-10H289.66Zm-7.41-21h44.44l3.53-10h-51.5ZM242,52h58l-3.47-10H242Zm81.25-21H396V21H326.71Zm-34-10H220V31h72.75ZM282,0H220V10h65.47Zm25.32,73-3.46-10H242V73h33V63.51L278.36,73Z" />
+					</g>
+				</g>
+			</svg>
+			<div class="form-holder">
+				<p style="font-size: 14px; margin-bottom: 15px;">Login below, or sign up with your physiotheraphist to
+					get
+					started with IBM Watson for Outpatient Care.</p>
+
+				<form #loginForm="ngForm" (ngSubmit)="validate()">
+
+					<!-- Username -->
+					<ibm-label helperText="helperText" invalid="invalid" invalidText="invalidText">
+						<label for="username">Username</label>
+						<input id="username" name="username" ibmText type="text" minlength="8" placeholder="John.Doe" [(ngModel)]="username">
+					</ibm-label>
+
+					<!-- password -->
+					<ibm-label helperText="helperText" invalid="invalid" invalidText="invalidText"
+						style="margin-top: 20px;">
+						<label for="password">Password</label>
+						<input id="password" name="password" ibmText type="password" minlength="8" [(ngModel)]="password">
+					</ibm-label>
+
+					<button ibmButton="secondary" type="submit" size="normal" style="margin-top: 20px;">Login</button>
+					<button ibmButton="ibmButton" size="normal" style="margin-top: 20px; margin-left: 10px;">Sign up</button>
+
+				</form>
+
+
+			</div>
+
+		</div>
+
+	</div>
+</div>

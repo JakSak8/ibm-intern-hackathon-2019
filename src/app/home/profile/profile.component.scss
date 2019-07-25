@@ -1,0 +1,27 @@
+.container {
+  background-color: #171717;
+  margin-top: 3rem;
+  color: #f3f3f3;
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  background-color: #282828;
+  color: #f3f3f3;
+  display: block;
+  position: relative;
+  padding-bottom: 10px;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+}
+
+.tile {
+  background-color: #282828;
+  margin: 20px;
+  padding: 5px;
+}
+
+.info {
+  margin: auto;
+}
